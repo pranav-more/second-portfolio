@@ -1,0 +1,122 @@
+*,*::before,::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    /* add font */
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: 400; */
+    height: 100vh;
+}
+
+.portfolio{
+    color: aliceblue;
+    background: radial-gradient(#1F2833,#0B0C10);
+}
+nav{
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+    color: #C5C6C7;
+}
+
+.logo{
+    /* font size */
+}
+
+.page{
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+
+.hero{
+    overflow: hidden;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    /* to remove space between two img display flex */
+    display: flex;
+    
+}
+
+.hero img{
+    height: 400px;
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+
+.model-right{
+    transform: translate(0%,10%);
+    opacity: 0.7;
+}
+
+.model-left {
+    transform: translate(0%,-10%);
+    opacity: 0.7;
+}
+
+.hero:hover .model-right{
+    transform: translate(0%,0%);
+    opacity: 1;
+}
+
+.hero:hover .model-left{
+    transform: translate(0%,0%);
+    opacity: 1;
+}
+
+.details{
+    grid-column: 2/3;
+    align-self: end;
+}
+
+.details h1{
+    font-size: 72px;
+    padding-bottom: 45px;
+    color: #66F6F1;
+
+}
+
+.details h5{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 6px 0px;
+    color: #C5C6C7;
+}
+
+.side-nav{
+    grid-column: 5/6;
+    margin-top: -100%;
+    margin-bottom:0;
+    background-color: #45A29E;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.side-nav > a{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding: 30px 20px;
+    color: #1F2833;
+    font-weight: bolder;
+    font-weight: 900;
+    font-size: 20px;
+    text-decoration: none;
+}
+.side-nav > h3{
+    font-weight: bolder;
+}
+
+.down-arrow{
+    position: absolute;
+    top:90%;
+    color: #45A29E;
+    font-weight: bold;
+}
